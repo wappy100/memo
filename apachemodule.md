@@ -51,7 +51,7 @@ apxs -c -i mod_test.c
 
 ### httpd.conf修正
 ```apacheconf
-LoadModule test_module modules/mod_test.c
+LoadModule test_module modules/mod_test.so
 <Location "/">
   SetHandler test
 </Location>
